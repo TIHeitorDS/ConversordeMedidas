@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de medidas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section is-medium">
+      <div class="columns">
+        <div class="column">
+          <p class="title has-text-centered">Conversor de medidas</p>
+          <div class="select">
+            <select data-js="menu">
+              <option value="comprimento">Comprimento</option>
+              <option value="area">Área</option>
+            </select>
+          </div>
+
+          <div class="columns mt-2">
+            <div class="column is-3">
+              <div data-js="lenghtMenu" class="select">
+                <select data-js="lenghtOption">
+                  <option value="quilometro">Quilômetro</option>
+                  <option value="hectometro">Hectômetro</option>
+                  <option value="decametro">Decâmetro</option>
+                  <option value="metro">Metro</option>
+                  <option value="decimetro">Decímetro</option>
+                  <option value="centimetro">Centímetro</option>
+                  <option value="milimetro">Milímetro</option>
+                </select>
+              </div>
+
+              <div data-js="areaMenu" class="select is-hidden">
+                <select data-js="areaOption">
+                  <option value="quilometro_quadrado">
+                    Quilômetro quadrado
+                  </option>
+                  <option value="hectometro_quadrado">
+                    Hectômetro quadrado
+                  </option>
+                  <option value="decametro_quadrado">Decâmetro quadrado</option>
+                  <option value="metro_quadrado">Metro quadrado</option>
+                  <option value="decimetro_quadrado">Decímetro quadrado</option>
+                  <option value="centimetro_quadrado">
+                    Centímetro quadrado
+                  </option>
+                  <option value="milimetro_quadrado">Milímetro quadrado</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="column">
+              <input
+                data-js="number"
+                class="input"
+                type="text"
+                placeholder=""
+              />
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column is-3">
+              <div data-js="convertionLenght" class="select">
+                <select data-js="convertLenghtTo">
+                  <option value="quilometro">Quilômetro</option>
+                  <option value="hectometro">Hectômetro</option>
+                  <option value="decametro">Decâmetro</option>
+                  <option value="metro">Metro</option>
+                  <option value="decimetro">Decímetro</option>
+                  <option value="centimetro">Centímetro</option>
+                  <option value="milimetro">Milímetro</option>
+                </select>
+              </div>
+
+              <div data-js="convertionArea" class="select is-hidden">
+                <select data-js="convertAreaTo">
+                  <option value="quilometro_quadrado">
+                    Quilômetro quadrado
+                  </option>
+                  <option value="hectometro_quadrado">
+                    Hectômetro quadrado
+                  </option>
+                  <option value="decametro_quadrado">Decâmetro quadrado</option>
+                  <option value="metro_quadrado">Metro quadrado</option>
+                  <option value="decimetro_quadrado">Decímetro quadrado</option>
+                  <option value="centimetro_quadrado">
+                    Centímetro quadrado
+                  </option>
+                  <option value="milimetro_quadrado">Milímetro quadrado</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <input data-js="result" type="text" class="input" />
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <button data-js="converterButton" class="button">
+                <span>Converter</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
